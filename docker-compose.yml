@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  ngnix:
+    image: ngnix_image
+    restart: always
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: ngnix_container
+    env_file: .env
+    ports:
+      - ${NGINX_PORT}:80
