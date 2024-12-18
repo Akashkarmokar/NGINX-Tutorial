@@ -11,3 +11,34 @@ services:
     env_file: .env
     ports:
       - ${NGINX_PORT}:80
+  
+  app_1:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    env_file: .env
+    ports:
+      - 3001:${APP_PORT}
+    environment:
+      - APP_NAME=ONE
+  
+  app_2:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    env_file: .env
+    ports:
+      - 3002:${APP_PORT}
+    environment:
+      - APP_NAME=TWO
+  
+  app_3:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    env_file: .env
+    ports:
+      - 3003:${APP_PORT}
+    environment:
+      - APP_NAME=THREE
+    
