@@ -6,9 +6,10 @@ require('dotenv').config({ path: path.resolve(__dirname,'../.env')});
 
 const app = express();
 const port = process.env.APP_PORT
-app.get('/', async (req, res, next)=> {
+app.get('/get', async (req, res, next)=> {
     return res.status(200).json({ 
-        data: `Message from ${process.env.APP_NAME}`
+        data: `Message from ${process.env.APP_NAME}`,
+        header: req.headers
     })
 })
 
