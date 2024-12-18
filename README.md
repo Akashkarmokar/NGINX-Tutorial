@@ -18,6 +18,9 @@ Each branch here are for each feature.
 1 . Main:
     Here we can see the code of how you can setup NGINX with docker and docker compose.
 
+2 . Reverse Proxy:
+    Here we can see the code of how you can setup Reverse Proxy with Multiple instance of backend services
+
 2 . Load Balance:
     Here we can see the code of how you can setup NGINX for Load Balance
 
