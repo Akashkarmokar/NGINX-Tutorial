@@ -1,19 +1,27 @@
-**NGINX TUTORIAL**
 
-Reason of being used NGINX: 
+# NGINX 
 
+This repo help you to demistifying how you can setup your Backend Infrastructure to scale up your backend services using built-in features of NGINX. 
+
+**FEATURES**
+***
+* Reverse Proxy
 * Load Balancing
-* HTTP CACHING
-* Reverse PROXY
-* CACHING
+* HTTP Caching
 
 
+****
+**BRANCH STRATEGY**
 
-Repository Details:
+Each branch here are for each feature.
 
-Every branch is splited to describe each features of NGINX here. 
+1 . Main:
+    Here we can see the code of how you can setup NGINX with docker and docker compose.
+
+2 . Reverse Proxy:
+    Here we can see the code of how you can setup Reverse Proxy with Multiple instance of backend services
+
+2 . Load Balance:
+    Here we can see the code of how you can setup NGINX for Load Balance
 
 
-Branch Details :
-
-This branch represent, how you can setup NGINX with docker and docker compose file
